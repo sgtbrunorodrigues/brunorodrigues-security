@@ -1,0 +1,1339 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Bruno Rodrigues | Offensive Security Engineer</title>
+<meta name="description" content="Cybersecurity portfolio focused on Penetration Testing, Red Team, Application Security and Security Research.">
+<meta name="author" content="Bruno Rodrigues">
+<meta name="theme-color" content="#0b0705">
+
+<!-- Open Graph / social preview -->
+<meta property="og:type" content="website">
+<meta property="og:title" content="Bruno Rodrigues | Offensive Security Engineer">
+<meta property="og:description" content="Cybersecurity portfolio focused on Penetration Testing, Red Team, Application Security and Security Research.">
+<meta property="og:image" content="assets/og-image.jpg">
+<meta name="twitter:card" content="summary_large_image">
+
+<!-- Favicon: replace assets/favicon.svg with your own if you want -->
+<link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+
+<!-- Fonts: Orbitron (display) / Rajdhani (UI) / JetBrains Mono (terminal) -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500;700;900&family=Rajdhani:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;700&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<!-- ============ BACKGROUND LAYERS (decorative) ============ -->
+<div class="bg-grid" aria-hidden="true"></div>
+<div class="bg-glow" aria-hidden="true"></div>
+<canvas id="particles" class="bg-particles" aria-hidden="true"></canvas>
+<div class="scanlines" aria-hidden="true"></div>
+
+<a href="#main" class="skip-link" data-en="Skip to content" data-pt="Ir para o conteúdo">Skip to content</a>
+
+<!-- ============ NAVIGATION ============ -->
+<header class="nav" id="nav">
+  <div class="nav-inner">
+    <a href="#home" class="brand" aria-label="Bruno Rodrigues — home">
+      <span class="brand-mark" aria-hidden="true">&gt;_</span>
+      <span class="brand-text">BRUNO<span class="brand-accent">RODRIGUES</span></span>
+    </a>
+
+    <nav class="nav-links" id="nav-links" aria-label="Main navigation">
+      <a href="#home"      data-en="HOME"           data-pt="INÍCIO">HOME</a>
+      <a href="#about"     data-en="ABOUT"          data-pt="SOBRE">ABOUT</a>
+      <a href="#experience" data-en="EXPERIENCE"    data-pt="EXPERIÊNCIA">EXPERIENCE</a>
+      <a href="#skills"    data-en="SKILLS"         data-pt="SKILLS">SKILLS</a>
+      <a href="#pentest"   data-en="PENTEST"        data-pt="PENTEST">PENTEST</a>
+      <a href="#vulns"     data-en="VULNERABILITIES" data-pt="VULNERABILIDADES">VULNERABILITIES</a>
+      <a href="#ctf"       data-en="CTF &amp; LABS" data-pt="CTF &amp; LABS">CTF &amp; LABS</a>
+      <a href="#certs"     data-en="CERTIFICATIONS" data-pt="CERTIFICAÇÕES">CERTIFICATIONS</a>
+      <a href="#writeups"  data-en="WRITE-UPS"      data-pt="WRITE-UPS">WRITE-UPS</a>
+      <a href="#contact"   data-en="CONTACT"        data-pt="CONTATO">CONTACT</a>
+    </nav>
+
+    <div class="nav-actions">
+      <button id="lang-toggle" class="lang-toggle" type="button"
+              aria-label="Switch language / Trocar idioma">
+        <span class="lang-opt is-active" data-lang="en">EN</span><span class="lang-sep">/</span><span class="lang-opt" data-lang="pt">PT</span>
+      </button>
+      <button id="nav-toggle" class="nav-toggle" type="button"
+              aria-expanded="false" aria-controls="nav-links"
+              aria-label="Open menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </div>
+  <div class="nav-progress" id="nav-progress" aria-hidden="true"></div>
+</header>
+
+<main id="main">
+
+<!-- ============ HERO ============ -->
+<section id="home" class="hero">
+  <div class="hero-media" aria-hidden="true">
+    <!-- Replace assets/hero.jpg with your own image (1920x1080 or larger).
+         If the file is missing, the gradient below still looks fine. -->
+    <img src="assets/hero.jpg" alt="" onerror="this.style.display='none'">
+    <div class="hero-media-overlay"></div>
+  </div>
+
+  <div class="hero-content">
+    <div class="hero-status">
+      <span class="dot" aria-hidden="true"></span>
+      <span class="mono" data-en="SYSTEM ONLINE — OFFENSIVE SECURITY ENGINEER"
+                          data-pt="SISTEMA ONLINE — ENGENHEIRO DE SEGURANÇA OFENSIVA">SYSTEM ONLINE — OFFENSIVE SECURITY ENGINEER</span>
+    </div>
+
+    <h1 class="hero-name">
+      <span class="glitch" data-text="BRUNO RODRIGUES">BRUNO RODRIGUES</span>
+    </h1>
+
+    <p class="hero-title" data-en="OFFENSIVE SECURITY ENGINEER" data-pt="OFFENSIVE SECURITY ENGINEER">OFFENSIVE SECURITY ENGINEER</p>
+
+    <p class="hero-sub mono">PENTEST <span class="sep">•</span> RED TEAM <span class="sep">•</span> APPSEC <span class="sep">•</span> SECURITY RESEARCH</p>
+
+    <p class="hero-desc"
+       data-en="Cybersecurity professional focused on offensive security, penetration testing, Red Team and Purple Team operations and application security. OSCP, eMAPT and DCPT certified. Currently working as an Offensive Security Engineer, with a background as a cyber security analyst and instructor in the Brazilian Army."
+       data-pt="Profissional de cibersegurança focado em segurança ofensiva, testes de intrusão, operações de Red Team e Purple Team e segurança de aplicações. Certificado OSCP, eMAPT e DCPT. Atualmente atuo como Offensive Security Engineer, com trajetória anterior como analista de segurança cibernética e instrutor no Exército Brasileiro.">
+      Cybersecurity professional focused on offensive security, penetration testing, red team operations and application security.
+    </p>
+
+    <div class="hero-buttons">
+      <a href="#pentest" class="btn btn-primary" data-en="VIEW MY WORK" data-pt="VER MEU TRABALHO">VIEW MY WORK</a>
+      <!-- TODO: replace with your real GitHub URL -->
+      <a href="https://github.com/sgtbrunorodrigues" class="btn" target="_blank" rel="noopener noreferrer">GITHUB</a>
+      <!-- TODO: replace with your real LinkedIn URL -->
+      <a href="https://www.linkedin.com/in/brunorodrigues-security/" class="btn" target="_blank" rel="noopener noreferrer">LINKEDIN</a>
+    </div>
+
+    <ul class="hero-stats" aria-label="Quick facts">
+      <li><strong>OSCP</strong><span data-en="OffSec Certified" data-pt="Certificado OffSec">OffSec Certified</span></li>
+      <li><strong>8</strong><span data-en="Certifications &amp; courses" data-pt="Certificações e cursos">Certifications &amp; courses</span></li>
+      <li><strong>3</strong><span data-en="HTB global CTFs" data-pt="CTFs globais HTB">HTB global CTFs</span></li>
+      <li><strong>2021</strong><span data-en="In offensive security since" data-pt="Em segurança ofensiva desde">In offensive security since</span></li>
+    </ul>
+  </div>
+
+  <a href="#about" class="hero-scroll mono" aria-label="Scroll to about section">
+    <span data-en="SCROLL" data-pt="ROLAR">SCROLL</span>
+    <span class="arrow" aria-hidden="true">↓</span>
+  </a>
+</section>
+
+<!-- ============ ABOUT ============ -->
+<section id="about" class="section">
+  <div class="wrap">
+    <div class="section-head">
+      <span class="section-index mono">01</span>
+      <h2 data-en="ABOUT ME" data-pt="SOBRE MIM">ABOUT ME</h2>
+      <p class="section-tag mono" data-en="// operator profile" data-pt="// perfil do operador">// operator profile</p>
+    </div>
+
+    <div class="about-grid">
+      <div class="about-text">
+        <p data-en="I am an Offensive Security Engineer based in Brasília, Brazil. My work is penetration testing across web applications, mobile apps, APIs, internal networks and infrastructure environments — plus adversary simulation, secure code review and Purple Team exercises with defensive teams."
+           data-pt="Sou Offensive Security Engineer, baseado em Brasília, Brasil. Meu trabalho é realizar testes de intrusão em aplicações web, aplicativos mobile, APIs, redes internas e ambientes de infraestrutura — além de simulação de adversários, revisão segura de código e exercícios de Purple Team junto aos times defensivos.">
+        </p>
+
+        <p data-en="Before moving to the private sector I spent three years at the Brazilian Army Electronic Warfare Instruction Center (CIGE), conducting penetration tests and Red Team and Purple Team missions in the Army's cyber defense environment and training officers and sergeants in Cyber Warfare courses. Before that, a decade of IT infrastructure and operations across several military units — servers, networks, satellite communications and VoIP in remote, high-complexity environments."
+           data-pt="Antes de migrar para a iniciativa privada, passei três anos no Centro de Instrução de Guerra Eletrônica (CIGE) do Exército Brasileiro, conduzindo testes de intrusão e missões de Red Team e Purple Team no ambiente de defesa cibernética da Força e ministrando instrução para oficiais e sargentos em cursos de Guerra Cibernética. Antes disso, uma década de infraestrutura e operações de TI em diversas organizações militares — servidores, redes, comunicações via satélite e VoIP em ambientes remotos e de alta complexidade.">
+        </p>
+
+        <p data-en="I hold a postgraduate degree in Privacy and Information Security from Universidade de Brasília (UnB) and a technologist degree in Cyber Defense from Estácio. My current focus is web and API security, mobile application security and Red/Purple Team operations, with a steady habit of hands-on CTF practice."
+           data-pt="Sou pós-graduado (lato sensu) em Privacidade e Segurança da Informação pela Universidade de Brasília (UnB) e tecnólogo em Defesa Cibernética pela Estácio. Meu foco atual é segurança web e de APIs, segurança de aplicações mobile e operações de Red/Purple Team, com prática constante em CTFs.">
+        </p>
+
+        <div class="about-langs">
+          <h3 class="mono" data-en="LANGUAGES" data-pt="IDIOMAS">LANGUAGES</h3>
+          <ul>
+            <li><span data-en="Portuguese" data-pt="Português">Portuguese</span> <em data-en="Native" data-pt="Nativo">Native</em></li>
+            <li><span data-en="English" data-pt="Inglês">English</span> <em data-en="Professional working proficiency" data-pt="Proficiência profissional">Professional working proficiency</em></li>
+            <li><span data-en="Spanish" data-pt="Espanhol">Spanish</span> <em data-en="Professional working proficiency" data-pt="Proficiência profissional">Professional working proficiency</em></li>
+          </ul>
+        </div>
+      </div>
+
+      <aside class="about-card" aria-label="Profile summary">
+        <div class="about-photo">
+          <!-- Replace assets/profile.jpg with your photo (square, ~600x600) -->
+          <img src="assets/profile.jpg" alt="Bruno Rodrigues" onerror="this.closest('.about-photo').classList.add('no-photo')">
+          <div class="photo-fallback mono" aria-hidden="true">BR</div>
+          <div class="photo-frame" aria-hidden="true"></div>
+        </div>
+        <dl class="about-meta mono">
+          <div><dt data-en="ROLE" data-pt="CARGO">ROLE</dt><dd>Offensive Security Engineer</dd></div>
+          <div><dt data-en="LOCATION" data-pt="LOCALIZAÇÃO">LOCATION</dt><dd data-en="Brasília, DF — Brazil" data-pt="Brasília, DF — Brasil">Brasília, DF — Brazil</dd></div>
+          <div><dt data-en="FOCUS" data-pt="FOCO">FOCUS</dt><dd data-en="Web / API / Mobile / Red Team" data-pt="Web / API / Mobile / Red Team">Web / API / Mobile / Red Team</dd></div>
+          <div><dt data-en="TEAM" data-pt="EQUIPE">TEAM</dt><dd>Caramelo Storm (CTF)</dd></div>
+          <div><dt data-en="STATUS" data-pt="STATUS">STATUS</dt><dd class="status-ok" data-en="Open to opportunities" data-pt="Aberto a oportunidades">Open to opportunities</dd></div>
+        </dl>
+      </aside>
+    </div>
+  </div>
+</section>
+
+<!-- ============ EXPERIENCE ============ -->
+<section id="experience" class="section section-alt">
+  <div class="wrap">
+    <div class="section-head">
+      <span class="section-index mono">02</span>
+      <h2 data-en="PROFESSIONAL EXPERIENCE" data-pt="EXPERIÊNCIA PROFISSIONAL">PROFESSIONAL EXPERIENCE</h2>
+      <p class="section-tag mono" data-en="// career timeline" data-pt="// linha do tempo">// career timeline</p>
+    </div>
+
+    <ol class="timeline">
+
+      <li class="tl-item">
+        <div class="tl-marker" aria-hidden="true"></div>
+        <div class="tl-body">
+          <p class="tl-period mono" data-en="MAY 2025 — PRESENT" data-pt="MAI 2025 — ATUAL">MAY 2025 — PRESENT</p>
+          <h3 class="tl-role">Offensive Security Engineer <span class="tl-level" data-en="(Mid-Level)" data-pt="(Pleno)">(Mid-Level)</span></h3>
+          <p class="tl-company">AB InBev <span class="tl-place" data-en="— Brasília, Brazil" data-pt="— Brasília, Brasil">— Brasília, Brazil</span></p>
+          <ul class="tl-list">
+            <li data-en="Penetration testing across web applications, mobile apps, APIs, internal networks and infrastructure environments." data-pt="Testes de intrusão em aplicações web, apps mobile, APIs, redes internas e ambientes de infraestrutura."></li>
+            <li data-en="Adversary simulation including lateral movement, persistence and data exfiltration to emulate real-world threat actors." data-pt="Simulação de adversários incluindo movimentação lateral, persistência e exfiltração de dados para emular agentes de ameaça reais."></li>
+            <li data-en="AppSec support through secure code reviews, architecture assessments and remediation guidance for development teams." data-pt="Apoio a AppSec com revisão segura de código, avaliação de arquitetura e orientação de remediação para times de desenvolvimento."></li>
+            <li data-en="Red Team and Purple Team exercises with the SOC and defensive teams to improve detection, response and control effectiveness." data-pt="Exercícios de Red Team e Purple Team com o SOC e times defensivos para melhorar detecção, resposta e efetividade dos controles."></li>
+            <li data-en="Automation scripts and tooling to optimize pentest workflows and report generation; daily use of CLI agents and MCP Server integrations for security workflows." data-pt="Scripts de automação e ferramentas para otimizar o fluxo de pentest e a geração de relatórios; uso diário de agentes de CLI e integração com MCP Servers em workflows de segurança."></li>
+            <li data-en="Technical security reports with risk-prioritized, actionable remediation; retesting and fix validation to prevent regressions." data-pt="Relatórios técnicos com remediação priorizada por risco; reteste e validação de correções para evitar regressões."></li>
+          </ul>
+          <ul class="tag-row" aria-label="Focus areas">
+            <li>Web Pentest</li><li>API Security</li><li>Mobile</li><li>Red Team</li><li>Purple Team</li><li>AppSec</li><li>Automation</li>
+          </ul>
+        </div>
+      </li>
+
+      <li class="tl-item">
+        <div class="tl-marker" aria-hidden="true"></div>
+        <div class="tl-body">
+          <p class="tl-period mono" data-en="MAY 2022 — MAY 2025" data-pt="MAI 2022 — MAI 2025">MAY 2022 — MAY 2025</p>
+          <h3 class="tl-role" data-en="Cyber Security Analyst / Instructor" data-pt="Analista de Segurança Cibernética / Instrutor">Cyber Security Analyst / Instructor</h3>
+          <p class="tl-company" data-en="Brazilian Army — Electronic Warfare Instruction Center (CIGE)" data-pt="Exército Brasileiro — Centro de Instrução de Guerra Eletrônica (CIGE)">Brazilian Army — Electronic Warfare Instruction Center (CIGE)<span class="tl-place"> — Brasília, Brazil</span></p>
+          <ul class="tl-list">
+            <li data-en="Penetration tests and Red Team missions inside the Army's cyber defense environment, emulating real-world threat actors against military networks and mission-critical systems." data-pt="Testes de intrusão e missões de Red Team no ambiente de defesa cibernética do Exército, emulando agentes de ameaça reais contra redes militares e sistemas críticos."></li>
+            <li data-en="Offensive security assessments across network, infrastructure and application layers, with remediation support in operational environments." data-pt="Avaliações de segurança ofensiva nas camadas de rede, infraestrutura e aplicação, com apoio à remediação em ambientes operacionais."></li>
+            <li data-en="Designed and delivered theoretical and practical training for officers and sergeants in Cyber Warfare courses." data-pt="Planejamento e condução de instrução teórica e prática para oficiais e sargentos em cursos de Guerra Cibernética."></li>
+            <li data-en="Created, graded and analysed cybersecurity and electronic warfare examinations." data-pt="Elaboração, correção e análise de avaliações de segurança cibernética e guerra eletrônica."></li>
+            <li data-en="Led hands-on cyber threat simulations and operational training exercises." data-pt="Condução de simulações de ameaças cibernéticas e exercícios operacionais práticos."></li>
+            <li data-en="Contributed to development and continuous update of educational material aligned with Brazilian Army cyber defense doctrine." data-pt="Contribuição no desenvolvimento e atualização de material didático alinhado à doutrina de defesa cibernética do Exército Brasileiro."></li>
+          </ul>
+          <ul class="tag-row" aria-label="Focus areas">
+            <li>Red Team</li><li data-en="Network Pentest" data-pt="Pentest de Rede">Network Pentest</li><li data-en="Training" data-pt="Instrução">Training</li><li data-en="Cyber Warfare" data-pt="Guerra Cibernética">Cyber Warfare</li>
+          </ul>
+        </div>
+      </li>
+
+      <li class="tl-item">
+        <div class="tl-marker" aria-hidden="true"></div>
+        <div class="tl-body">
+          <p class="tl-period mono" data-en="DEC 2012 — MAY 2022" data-pt="DEZ 2012 — MAI 2022">DEC 2012 — MAY 2022</p>
+          <h3 class="tl-role" data-en="IT &amp; Operations Roles (Progressive Responsibility)" data-pt="Funções de TI e Operações (responsabilidade progressiva)">IT &amp; Operations Roles (Progressive Responsibility)</h3>
+          <p class="tl-company" data-en="Brazilian Army — Various Military Units" data-pt="Exército Brasileiro — Diversas Organizações Militares">Brazilian Army — Various Military Units<span class="tl-place"> — Brazil</span></p>
+          <ul class="tl-list">
+            <li data-en="IT infrastructure and operational support across multiple military units, including communications, network services and mission-critical systems." data-pt="Infraestrutura de TI e suporte operacional em diversas organizações militares, incluindo comunicações, serviços de rede e sistemas críticos."></li>
+            <li data-en="Managed servers, wired and wireless networks, satellite communications and VoIP in remote, high-complexity environments." data-pt="Administração de servidores, redes cabeadas e sem fio, comunicações via satélite e VoIP em ambientes remotos e de alta complexidade."></li>
+            <li data-en="Led IT operations as Head of IT Section, prioritizing services to support operational objectives." data-pt="Liderança das operações de TI como Chefe da Seção de Informática, priorizando serviços para sustentar os objetivos operacionais."></li>
+            <li data-en="Supported financial and administrative operations, applying accounting and compliance principles in regulated environments." data-pt="Apoio a operações financeiras e administrativas, aplicando princípios contábeis e de conformidade em ambientes regulados."></li>
+          </ul>
+          <ul class="tag-row" aria-label="Focus areas">
+            <li data-en="Infrastructure" data-pt="Infraestrutura">Infrastructure</li><li data-en="Networks" data-pt="Redes">Networks</li><li>SATCOM</li><li>VoIP</li><li data-en="IT Leadership" data-pt="Gestão de TI">IT Leadership</li>
+          </ul>
+        </div>
+      </li>
+
+      <li class="tl-item">
+        <div class="tl-marker" aria-hidden="true"></div>
+        <div class="tl-body">
+          <p class="tl-period mono" data-en="JUL 2008 — APR 2011" data-pt="JUL 2008 — ABR 2011">JUL 2008 — APR 2011</p>
+          <h3 class="tl-role" data-en="Helpdesk / IT Support" data-pt="Helpdesk / Suporte de TI">Helpdesk / IT Support</h3>
+          <p class="tl-company">SPOT Monitoring and Technology <span class="tl-place" data-en="— Porto Alegre, Brazil" data-pt="— Porto Alegre, Brasil">— Porto Alegre, Brazil</span></p>
+          <ul class="tl-list">
+            <li data-en="Maintained IT infrastructure stability for monitoring operations." data-pt="Manutenção da estabilidade da infraestrutura de TI para operações de monitoramento."></li>
+            <li data-en="Server administration, network management and end-user technical support." data-pt="Administração de servidores, gestão de redes e suporte técnico a usuários."></li>
+            <li data-en="Preventive and corrective maintenance in field environments." data-pt="Manutenção preventiva e corretiva em campo."></li>
+          </ul>
+        </div>
+      </li>
+
+      <li class="tl-item tl-item-alt">
+        <div class="tl-marker" aria-hidden="true"></div>
+        <div class="tl-body">
+          <p class="tl-period mono" data-en="APR 2025 — PRESENT" data-pt="ABR 2025 — ATUAL">APR 2025 — PRESENT</p>
+          <h3 class="tl-role" data-en="Cybersecurity Player — CTF Team" data-pt="Cybersecurity Player — Time de CTF">Cybersecurity Player — CTF Team</h3>
+          <p class="tl-company">CARAMELO STORM <span class="tl-place" data-en="— Brasília, Brazil" data-pt="— Brasília, Brasil">— Brasília, Brazil</span></p>
+          <ul class="tl-list">
+            <li data-en="Capture the Flag competitions focused on offensive security techniques." data-pt="Competições de Capture the Flag com foco em técnicas de segurança ofensiva."></li>
+            <li data-en="Hands-on practice in exploitation, privilege escalation, web and infrastructure attacks." data-pt="Prática em exploração, escalonamento de privilégios e ataques web e de infraestrutura."></li>
+            <li data-en="Collaboration with senior community members to improve technical depth and problem-solving." data-pt="Colaboração com membros seniores da comunidade para aprofundamento técnico e resolução de problemas."></li>
+          </ul>
+        </div>
+      </li>
+
+    </ol>
+  </div>
+</section>
+
+<!-- ============ SKILLS ============ -->
+<section id="skills" class="section">
+  <div class="wrap">
+    <div class="section-head">
+      <span class="section-index mono">03</span>
+      <h2 data-en="SKILLS" data-pt="COMPETÊNCIAS">SKILLS</h2>
+      <p class="section-tag mono" data-en="// capability matrix" data-pt="// matriz de capacidades">// capability matrix</p>
+    </div>
+
+    <div class="cards grid-3">
+
+      <article class="card">
+        <header class="card-head"><span class="card-icon" aria-hidden="true">◈</span>
+          <h3 data-en="OFFENSIVE SECURITY" data-pt="SEGURANÇA OFENSIVA">OFFENSIVE SECURITY</h3></header>
+        <p data-en="Manual penetration testing across the full application and infrastructure stack, following OWASP WSTG and MASTG."
+           data-pt="Testes de intrusão manuais em toda a pilha de aplicação e infraestrutura, seguindo OWASP WSTG e MASTG."></p>
+        <ul class="chips">
+          <li data-en="Penetration Testing" data-pt="Testes de Intrusão">Penetration Testing</li>
+          <li data-en="Vulnerability Assessment" data-pt="Vulnerability Assessment">Vulnerability Assessment</li>
+          <li data-en="Adversary Simulation" data-pt="Simulação de Adversários">Adversary Simulation</li>
+          <li>OWASP WSTG</li>
+          <li>CVSS v3.1</li>
+        </ul>
+      </article>
+
+      <article class="card">
+        <header class="card-head"><span class="card-icon" aria-hidden="true">◇</span>
+          <h3 data-en="APPLICATION SECURITY" data-pt="SEGURANÇA DE APLICAÇÕES">APPLICATION SECURITY</h3></header>
+        <p data-en="Secure code review, architecture assessment and remediation guidance delivered directly to development teams."
+           data-pt="Revisão segura de código, avaliação de arquitetura e orientação de remediação entregues diretamente aos times de desenvolvimento."></p>
+        <ul class="chips">
+          <li data-en="Secure Code Review" data-pt="Revisão Segura de Código">Secure Code Review</li>
+          <li data-en="Architecture Assessment" data-pt="Avaliação de Arquitetura">Architecture Assessment</li>
+          <li data-en="Remediation Guidance" data-pt="Orientação de Remediação">Remediation Guidance</li>
+          <li data-en="Business Logic Flaws" data-pt="Falhas de Lógica de Negócio">Business Logic Flaws</li>
+        </ul>
+      </article>
+
+      <article class="card">
+        <header class="card-head"><span class="card-icon" aria-hidden="true">⬡</span>
+          <h3 data-en="API &amp; WEB SECURITY" data-pt="SEGURANÇA WEB &amp; API">API &amp; WEB SECURITY</h3></header>
+        <p data-en="Authentication, authorization, input validation, rate limiting and data exposure testing on REST APIs and web applications."
+           data-pt="Testes de autenticação, autorização, validação de entrada, rate limiting e exposição de dados em APIs REST e aplicações web."></p>
+        <ul class="chips">
+          <li>IDOR / BOLA</li><li>XSS</li><li>SSRF</li>
+          <li data-en="Insecure Deserialization" data-pt="Desserialização Insegura">Insecure Deserialization</li>
+          <li data-en="Rate Limiting" data-pt="Rate Limiting">Rate Limiting</li>
+        </ul>
+      </article>
+
+      <article class="card">
+        <header class="card-head"><span class="card-icon" aria-hidden="true">▣</span>
+          <h3 data-en="MOBILE SECURITY" data-pt="SEGURANÇA MOBILE">MOBILE SECURITY</h3></header>
+        <p data-en="Mobile application penetration testing following the OWASP Mobile Application Security Testing Guide (MASTG), covering the whole surface of an app rather than only its screens: how it stores data locally, how it protects data in transit, how authentication and session handling are implemented, how cryptography and key material are used, and how the app talks to its backend APIs — since a mobile finding often ends up being an API finding."
+           data-pt="Testes de intrusão em aplicações mobile seguindo o OWASP Mobile Application Security Testing Guide (MASTG), cobrindo toda a superfície do app e não apenas suas telas: como ele armazena dados localmente, como protege os dados em trânsito, como implementa autenticação e gestão de sessão, como usa criptografia e material de chave, e como conversa com as APIs de backend — já que um achado em mobile frequentemente termina como um achado de API."></p>
+        <ul class="chips">
+          <li>OWASP MASTG</li><li>Android</li><li>iOS</li>
+          <li data-en="Insecure Data Storage" data-pt="Armazenamento Inseguro">Insecure Data Storage</li>
+        </ul>
+      </article>
+
+      <article class="card">
+        <header class="card-head"><span class="card-icon" aria-hidden="true">◉</span>
+          <h3 data-en="NETWORK &amp; INFRASTRUCTURE" data-pt="REDE &amp; INFRAESTRUTURA">NETWORK &amp; INFRASTRUCTURE</h3></header>
+        <p data-en="Internal network and infrastructure testing, built on a decade of hands-on server, network, satellite communication and VoIP operations."
+           data-pt="Testes em redes internas e infraestrutura, apoiados em uma década de operação prática de servidores, redes, comunicação via satélite e VoIP."></p>
+        <ul class="chips">
+          <li data-en="Network Pentest" data-pt="Pentest de Rede">Network Pentest</li>
+          <li data-en="Infrastructure Security" data-pt="Segurança de Infraestrutura">Infrastructure Security</li>
+          <li data-en="Cloud Metadata Abuse" data-pt="Abuso de Metadata em Cloud">Cloud Metadata Abuse</li>
+          <li>CCNA / CyberOps</li>
+        </ul>
+      </article>
+
+      <article class="card">
+        <header class="card-head"><span class="card-icon" aria-hidden="true">⌬</span>
+          <h3 data-en="RED &amp; PURPLE TEAM" data-pt="RED &amp; PURPLE TEAM">RED &amp; PURPLE TEAM</h3></header>
+        <p data-en="Adversary emulation with lateral movement, persistence and data exfiltration, run jointly with the SOC to measure and improve detection."
+           data-pt="Emulação de adversários com movimentação lateral, persistência e exfiltração de dados, conduzida junto ao SOC para medir e melhorar a detecção."></p>
+        <ul class="chips">
+          <li data-en="Lateral Movement" data-pt="Movimentação Lateral">Lateral Movement</li>
+          <li data-en="Persistence" data-pt="Persistência">Persistence</li>
+          <li data-en="Data Exfiltration" data-pt="Exfiltração de Dados">Data Exfiltration</li>
+          <li data-en="Detection Engineering Feedback" data-pt="Feedback de Detecção">Detection Engineering Feedback</li>
+        </ul>
+      </article>
+
+      <article class="card">
+        <header class="card-head"><span class="card-icon" aria-hidden="true">⟐</span>
+          <h3 data-en="SECURITY AUTOMATION" data-pt="AUTOMAÇÃO DE SEGURANÇA">SECURITY AUTOMATION</h3></header>
+        <p data-en="Scripting to speed up testing workflows and reporting, including daily use of CLI agents and MCP Server integrations."
+           data-pt="Scripts para acelerar os fluxos de teste e a geração de relatórios, incluindo uso diário de agentes de CLI e integrações com MCP Servers."></p>
+        <ul class="chips">
+          <li>Python</li><li>Bash</li>
+          <li data-en="Report Automation" data-pt="Automação de Relatórios">Report Automation</li>
+          <li>CLI Agents / MCP</li>
+        </ul>
+      </article>
+
+      <article class="card">
+        <header class="card-head"><span class="card-icon" aria-hidden="true">✦</span>
+          <h3 data-en="REPORTING &amp; COMMUNICATION" data-pt="RELATÓRIO &amp; COMUNICAÇÃO">REPORTING &amp; COMMUNICATION</h3></header>
+        <p data-en="Risk-prioritized technical reports with business impact, CVSS v3.1 scoring, proof of concept and actionable remediation — plus retesting to validate fixes."
+           data-pt="Relatórios técnicos priorizados por risco, com impacto de negócio, pontuação CVSS v3.1, prova de conceito e remediação acionável — além de reteste para validar correções."></p>
+        <ul class="chips">
+          <li data-en="Executive Summary" data-pt="Resumo Executivo">Executive Summary</li>
+          <li>CVSS v3.1</li><li>CWE</li>
+          <li data-en="Retest &amp; Validation" data-pt="Reteste e Validação">Retest &amp; Validation</li>
+          <li data-en="Technical Training" data-pt="Instrução Técnica">Technical Training</li>
+        </ul>
+      </article>
+
+      <article class="card">
+        <header class="card-head"><span class="card-icon" aria-hidden="true">⚙</span>
+          <h3 data-en="TOOLS" data-pt="FERRAMENTAS">TOOLS</h3></header>
+        <p data-en="Tools used in documented engagements and hands-on practice. Add your own as you publish more work."
+           data-pt="Ferramentas utilizadas em engajamentos documentados e prática hands-on. Acrescente as suas conforme publicar mais trabalhos."></p>
+        <ul class="chips">
+          <li>Burp Suite</li><li>Nmap</li><li>Python</li><li>Bash</li>
+        </ul>
+      </article>
+
+    </div>
+  </div>
+</section>
+
+<!-- ============ PENTEST / OFFENSIVE SECURITY ============ -->
+<section id="pentest" class="section section-alt">
+  <div class="wrap">
+    <div class="section-head">
+      <span class="section-index mono">04</span>
+      <h2 data-en="OFFENSIVE SECURITY" data-pt="SEGURANÇA OFENSIVA">OFFENSIVE SECURITY</h2>
+      <p class="section-tag mono" data-en="// engagement capabilities" data-pt="// capacidades de engajamento">// engagement capabilities</p>
+    </div>
+
+    <div class="cards grid-3 glow-cards">
+
+      <article class="card card-glow">
+        <span class="card-num mono">01</span>
+        <h3 data-en="WEB APPLICATION" data-pt="APLICAÇÃO WEB">WEB APPLICATION</h3>
+        <p data-en="Black box and grey box testing of web applications, from authentication and session handling through business logic abuse."
+           data-pt="Testes black box e grey box de aplicações web, de autenticação e sessão até abuso de lógica de negócio."></p>
+        <ul class="tech-list mono">
+          <li data-en="Authentication &amp; session testing" data-pt="Testes de autenticação e sessão"></li>
+          <li data-en="Access control / IDOR" data-pt="Controle de acesso / IDOR"></li>
+          <li data-en="Injection &amp; stored XSS" data-pt="Injeção e XSS armazenado"></li>
+          <li data-en="Business logic abuse" data-pt="Abuso de lógica de negócio"></li>
+        </ul>
+      </article>
+
+      <article class="card card-glow">
+        <span class="card-num mono">02</span>
+        <h3 data-en="API SECURITY" data-pt="SEGURANÇA DE API">API SECURITY</h3>
+        <p data-en="REST API assessments focused on authorization boundaries, data exposure, rate limiting and input validation."
+           data-pt="Avaliação de APIs REST com foco em fronteiras de autorização, exposição de dados, rate limiting e validação de entrada."></p>
+        <ul class="tech-list mono">
+          <li data-en="Broken object level authorization" data-pt="Autorização quebrada em nível de objeto"></li>
+          <li data-en="Exposed documentation &amp; endpoints" data-pt="Documentação e endpoints expostos"></li>
+          <li data-en="User enumeration" data-pt="Enumeração de usuários"></li>
+          <li data-en="Rate limiting &amp; resource abuse" data-pt="Rate limiting e abuso de recursos"></li>
+        </ul>
+      </article>
+
+      <article class="card card-glow">
+        <span class="card-num mono">03</span>
+        <h3 data-en="MOBILE SECURITY" data-pt="SEGURANÇA MOBILE">MOBILE SECURITY</h3>
+        <p data-en="Android and iOS assessments following OWASP MASTG: data storage, communication, authentication and cryptography."
+           data-pt="Avaliações Android e iOS seguindo o OWASP MASTG: armazenamento de dados, comunicação, autenticação e criptografia."></p>
+        <ul class="tech-list mono">
+          <li data-en="Local data storage review" data-pt="Análise de armazenamento local"></li>
+          <li data-en="Transport security" data-pt="Segurança de transporte"></li>
+          <li data-en="Authentication flows" data-pt="Fluxos de autenticação"></li>
+          <li data-en="Backend API surface" data-pt="Superfície da API backend"></li>
+        </ul>
+      </article>
+
+      <article class="card card-glow">
+        <span class="card-num mono">04</span>
+        <h3 data-en="NETWORK PENTEST" data-pt="PENTEST DE REDE">NETWORK PENTEST</h3>
+        <p data-en="Internal network and infrastructure testing — service enumeration, exposed management interfaces and misconfiguration."
+           data-pt="Testes em redes internas e infraestrutura — enumeração de serviços, interfaces de gestão expostas e configurações inseguras."></p>
+        <ul class="tech-list mono">
+          <li data-en="Service &amp; port enumeration" data-pt="Enumeração de serviços e portas"></li>
+          <li data-en="Exposed services review" data-pt="Análise de serviços expostos"></li>
+          <li data-en="Misconfiguration analysis" data-pt="Análise de configurações inseguras"></li>
+          <li data-en="Infrastructure hardening advice" data-pt="Recomendações de hardening"></li>
+        </ul>
+      </article>
+
+      <article class="card card-glow">
+        <span class="card-num mono">05</span>
+        <h3 data-en="RED TEAM" data-pt="RED TEAM">RED TEAM</h3>
+        <p data-en="Adversary simulation against production-like environments, including missions inside a military cyber defense environment."
+           data-pt="Simulação de adversários em ambientes próximos de produção, incluindo missões em ambiente militar de defesa cibernética."></p>
+        <ul class="tech-list mono">
+          <li data-en="Lateral movement" data-pt="Movimentação lateral"></li>
+          <li data-en="Persistence" data-pt="Persistência"></li>
+          <li data-en="Data exfiltration" data-pt="Exfiltração de dados"></li>
+          <li data-en="Threat actor emulation" data-pt="Emulação de agentes de ameaça"></li>
+        </ul>
+      </article>
+
+      <article class="card card-glow">
+        <span class="card-num mono">06</span>
+        <h3 data-en="PURPLE TEAM" data-pt="PURPLE TEAM">PURPLE TEAM</h3>
+        <p data-en="Joint exercises with SOC and defensive teams to measure detection coverage and improve response — also the subject of my postgraduate thesis."
+           data-pt="Exercícios conjuntos com o SOC e times defensivos para medir cobertura de detecção e melhorar a resposta — também tema da minha monografia de pós-graduação."></p>
+        <ul class="tech-list mono">
+          <li data-en="Detection coverage validation" data-pt="Validação de cobertura de detecção"></li>
+          <li data-en="Control effectiveness testing" data-pt="Teste de efetividade de controles"></li>
+          <li data-en="Response improvement feedback" data-pt="Feedback para melhoria de resposta"></li>
+        </ul>
+      </article>
+
+      <article class="card card-glow">
+        <span class="card-num mono">07</span>
+        <h3 data-en="SECURE CODE REVIEW" data-pt="REVISÃO SEGURA DE CÓDIGO">SECURE CODE REVIEW</h3>
+        <p data-en="Manual review of source code and architecture to find issues that dynamic testing alone would miss, with fixes written for developers."
+           data-pt="Revisão manual de código-fonte e arquitetura para encontrar falhas que o teste dinâmico sozinho não alcança, com correções escritas para desenvolvedores."></p>
+        <ul class="tech-list mono">
+          <li data-en="Source code analysis" data-pt="Análise de código-fonte"></li>
+          <li data-en="Architecture assessment" data-pt="Avaliação de arquitetura"></li>
+          <li data-en="Developer remediation guidance" data-pt="Orientação de correção ao desenvolvedor"></li>
+        </ul>
+      </article>
+
+      <article class="card card-glow">
+        <span class="card-num mono">08</span>
+        <h3 data-en="RETEST &amp; VALIDATION" data-pt="RETESTE &amp; VALIDAÇÃO">RETEST &amp; VALIDATION</h3>
+        <p data-en="Re-testing of reported findings to confirm that fixes work and that the issue does not reappear in a later release."
+           data-pt="Reteste dos achados reportados para confirmar que as correções funcionam e que a falha não reaparece em versões seguintes."></p>
+        <ul class="tech-list mono">
+          <li data-en="Fix validation" data-pt="Validação de correção"></li>
+          <li data-en="Regression checks" data-pt="Verificação de regressão"></li>
+          <li data-en="SLA-driven follow-up" data-pt="Acompanhamento por SLA"></li>
+        </ul>
+      </article>
+
+    </div>
+  </div>
+</section>
+
+<!-- ============ VULNERABILITY RESEARCH ============ -->
+<section id="vulns" class="section">
+  <div class="wrap">
+    <div class="section-head">
+      <span class="section-index mono">05</span>
+      <h2 data-en="VULNERABILITY RESEARCH" data-pt="PESQUISA DE VULNERABILIDADES">VULNERABILITY RESEARCH</h2>
+      <p class="section-tag mono" data-en="// anonymized findings" data-pt="// achados anonimizados">// anonymized findings</p>
+    </div>
+
+    <div class="notice">
+      <span class="notice-icon mono" aria-hidden="true">!</span>
+      <p data-en="All findings below come from authorized penetration tests. Targets, hosts, endpoints and client identities are redacted. No confidential material is published here."
+         data-pt="Todos os achados abaixo vêm de testes de intrusão autorizados. Alvos, hosts, endpoints e identidade dos clientes foram omitidos. Nenhum material confidencial é publicado aqui."></p>
+    </div>
+
+    <!-- Engagement A -->
+    <div class="engagement">
+      <div class="engagement-head">
+        <h3 class="mono">ENGAGEMENT A — <span data-en="WEB &amp; API / FINANCIAL APPLICATION" data-pt="WEB &amp; API / APLICAÇÃO FINANCEIRA">WEB &amp; API / FINANCIAL APPLICATION</span></h3>
+        <ul class="engagement-meta mono">
+          <li><span data-en="TARGET" data-pt="ALVO">TARGET</span>: CONFIDENTIAL CLIENT</li>
+          <li><span data-en="TYPE" data-pt="TIPO">TYPE</span>: BLACK BOX</li>
+          <li><span data-en="YEAR" data-pt="ANO">YEAR</span>: 2026</li>
+          <li><span data-en="FINDINGS" data-pt="ACHADOS">FINDINGS</span>: 8</li>
+        </ul>
+      </div>
+
+      <div class="sev-summary mono" aria-label="Severity summary">
+        <span class="sev sev-critical">CRITICAL <b>2</b></span>
+        <span class="sev sev-high">HIGH <b>3</b></span>
+        <span class="sev sev-medium">MEDIUM <b>2</b></span>
+        <span class="sev sev-low">LOW <b>1</b></span>
+      </div>
+
+      <div class="findings">
+
+        <article class="finding sev-critical-b" tabindex="0" role="button"
+          data-title-en="Remote Code Execution via Insecure Deserialization"
+          data-title-pt="Execução Remota de Código via Desserialização Insegura"
+          data-sev="CRITICAL" data-score="9.8" data-cwe="CWE-502"
+          data-cvss="CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H"
+          data-cat-en="Injection / Deserialization" data-cat-pt="Injeção / Desserialização"
+          data-desc-en="The application deserialized attacker-controlled data without validation, allowing arbitrary code execution on the server."
+          data-desc-pt="A aplicação desserializava dados controlados pelo atacante sem validação, permitindo execução arbitrária de código no servidor."
+          data-impact-en="Full compromise of the application server, with access to application data and the ability to pivot into internal systems."
+          data-impact-pt="Comprometimento total do servidor da aplicação, com acesso aos dados e possibilidade de pivotar para sistemas internos."
+          data-fix-en="Never deserialize untrusted input. Use data-only formats, apply strict type allow-lists and integrity checks, and isolate the process."
+          data-fix-pt="Nunca desserialize entrada não confiável. Use formatos apenas de dados, listas de tipos permitidos e verificação de integridade, e isole o processo.">
+          <div class="finding-top">
+            <span class="badge b-critical mono">CRITICAL</span>
+            <span class="score mono">9.8</span>
+          </div>
+          <h4 data-en="Remote Code Execution via Insecure Deserialization" data-pt="Execução Remota de Código via Desserialização Insegura">Remote Code Execution via Insecure Deserialization</h4>
+          <p class="finding-cwe mono">CWE-502</p>
+          <span class="finding-cta mono" data-en="[ VIEW DETAILS ]" data-pt="[ VER DETALHES ]">[ VIEW DETAILS ]</span>
+        </article>
+
+        <article class="finding sev-critical-b" tabindex="0" role="button"
+          data-title-en="Cloud IAM Credential Exposure via Instance Metadata Service"
+          data-title-pt="Exposição de Credenciais IAM via Instance Metadata Service"
+          data-sev="CRITICAL" data-score="9.1" data-cwe="CWE-522, CWE-284"
+          data-cvss="CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H"
+          data-cat-en="Credential Management / Cloud" data-cat-pt="Gestão de Credenciais / Cloud"
+          data-desc-en="The instance metadata service was reachable from the application, exposing temporary cloud IAM credentials to an authenticated attacker."
+          data-desc-pt="O serviço de metadados da instância era alcançável a partir da aplicação, expondo credenciais IAM temporárias a um atacante autenticado."
+          data-impact-en="Access to cloud resources with the permissions of the instance role, opening the door to lateral movement in the cloud environment."
+          data-impact-pt="Acesso a recursos de nuvem com as permissões da role da instância, abrindo caminho para movimentação lateral no ambiente cloud."
+          data-fix-en="Enforce IMDSv2 with session tokens, block metadata access from application-level requests, and apply least privilege to the instance role."
+          data-fix-pt="Exigir IMDSv2 com tokens de sessão, bloquear acesso ao metadata a partir de requisições da aplicação e aplicar menor privilégio na role da instância.">
+          <div class="finding-top">
+            <span class="badge b-critical mono">CRITICAL</span>
+            <span class="score mono">9.1</span>
+          </div>
+          <h4 data-en="Cloud IAM Credential Exposure via Instance Metadata Service" data-pt="Exposição de Credenciais IAM via Instance Metadata Service">Cloud IAM Credential Exposure via Instance Metadata Service</h4>
+          <p class="finding-cwe mono">CWE-522 · CWE-284</p>
+          <span class="finding-cta mono" data-en="[ VIEW DETAILS ]" data-pt="[ VER DETALHES ]">[ VIEW DETAILS ]</span>
+        </article>
+
+        <article class="finding sev-high-b" tabindex="0" role="button"
+          data-title-en="Stored XSS Leading to Admin Account Takeover"
+          data-title-pt="XSS Armazenado Levando a Account Takeover Administrativo"
+          data-sev="HIGH" data-score="8.2" data-cwe="CWE-79, CWE-269, CWE-284"
+          data-cvss="CVSS:3.1/AV:N/AC:L/PR:L/UI:R/S:C/C:H/I:H/A:N"
+          data-cat-en="Cross-Site Scripting / Privilege Escalation" data-cat-pt="Cross-Site Scripting / Escalonamento de Privilégios"
+          data-desc-en="A stored cross-site scripting payload was rendered in an administrative interface, executing in the context of a privileged user."
+          data-desc-pt="Um payload de cross-site scripting armazenado era renderizado em uma interface administrativa, executando no contexto de um usuário privilegiado."
+          data-impact-en="A low-privileged user could take over an administrator account, escalating from regular access to full application control."
+          data-impact-pt="Um usuário de baixo privilégio poderia assumir uma conta de administrador, escalando de acesso comum para controle total da aplicação."
+          data-fix-en="Apply context-aware output encoding, validate input server-side, set a restrictive Content Security Policy and use HttpOnly session cookies."
+          data-fix-pt="Aplicar codificação de saída sensível ao contexto, validar entrada no servidor, definir uma Content Security Policy restritiva e usar cookies de sessão HttpOnly.">
+          <div class="finding-top">
+            <span class="badge b-high mono">HIGH</span>
+            <span class="score mono">8.2</span>
+          </div>
+          <h4 data-en="Stored XSS Leading to Admin Account Takeover" data-pt="XSS Armazenado Levando a Account Takeover Administrativo">Stored XSS Leading to Admin Account Takeover</h4>
+          <p class="finding-cwe mono">CWE-79 · CWE-269 · CWE-284</p>
+          <span class="finding-cta mono" data-en="[ VIEW DETAILS ]" data-pt="[ VER DETALHES ]">[ VIEW DETAILS ]</span>
+        </article>
+
+        <article class="finding sev-high-b" tabindex="0" role="button"
+          data-title-en="Server-Side Request Forgery to Internal Services"
+          data-title-pt="Server-Side Request Forgery para Serviços Internos"
+          data-sev="HIGH" data-score="8.0" data-cwe="CWE-918"
+          data-cvss="CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:H/I:L/A:N"
+          data-cat-en="Server-Side Request Forgery" data-cat-pt="Server-Side Request Forgery"
+          data-desc-en="The server fetched URLs supplied by the user without validation, allowing requests to be directed at internal network services."
+          data-desc-pt="O servidor acessava URLs fornecidas pelo usuário sem validação, permitindo direcionar requisições a serviços da rede interna."
+          data-impact-en="Exposure of internal services that are not reachable from the internet, and a path towards further internal reconnaissance."
+          data-impact-pt="Exposição de serviços internos não alcançáveis pela internet e um caminho para reconhecimento interno adicional."
+          data-fix-en="Validate destinations against an allow-list, resolve and re-check addresses before connecting, block internal ranges and disable unused URL schemes."
+          data-fix-pt="Validar destinos contra uma allow-list, resolver e revalidar endereços antes de conectar, bloquear faixas internas e desabilitar esquemas de URL não utilizados.">
+          <div class="finding-top">
+            <span class="badge b-high mono">HIGH</span>
+            <span class="score mono">8.0</span>
+          </div>
+          <h4 data-en="Server-Side Request Forgery to Internal Services" data-pt="Server-Side Request Forgery para Serviços Internos">Server-Side Request Forgery to Internal Services</h4>
+          <p class="finding-cwe mono">CWE-918</p>
+          <span class="finding-cta mono" data-en="[ VIEW DETAILS ]" data-pt="[ VER DETALHES ]">[ VIEW DETAILS ]</span>
+        </article>
+
+        <article class="finding sev-high-b" tabindex="0" role="button"
+          data-title-en="IDOR in Transaction History"
+          data-title-pt="IDOR no Histórico de Transações"
+          data-sev="HIGH" data-score="7.5" data-cwe="CWE-639"
+          data-cvss="CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:H/I:N/A:N"
+          data-cat-en="Access Control" data-cat-pt="Controle de Acesso"
+          data-desc-en="An authenticated user could read the transaction history of other accounts by changing an identifier in the request, with no ownership validation on the server."
+          data-desc-pt="Um usuário autenticado conseguia ler o histórico de transações de outras contas alterando um identificador na requisição, sem validação de titularidade no servidor."
+          data-impact-en="Unauthorized disclosure of sensitive financial data and personal information belonging to other customers, with regulatory exposure under LGPD and GDPR."
+          data-impact-pt="Divulgação não autorizada de dados financeiros sensíveis e informações pessoais de outros clientes, com exposição regulatória sob LGPD e GDPR."
+          data-fix-en="Enforce server-side authorization on every request so a user can only read resources bound to their own identity; never trust a client-supplied account identifier."
+          data-fix-pt="Aplicar autorização no servidor em toda requisição, de forma que o usuário só leia recursos vinculados à sua própria identidade; nunca confiar em identificador de conta enviado pelo cliente.">
+          <div class="finding-top">
+            <span class="badge b-high mono">HIGH</span>
+            <span class="score mono">7.5</span>
+          </div>
+          <h4 data-en="IDOR in Transaction History" data-pt="IDOR no Histórico de Transações">IDOR in Transaction History</h4>
+          <p class="finding-cwe mono">CWE-639</p>
+          <span class="finding-cta mono" data-en="[ VIEW DETAILS ]" data-pt="[ VER DETALHES ]">[ VIEW DETAILS ]</span>
+        </article>
+
+        <article class="finding sev-medium-b" tabindex="0" role="button"
+          data-title-en="Missing Rate Limiting on Transactions"
+          data-title-pt="Ausência de Rate Limiting em Transações"
+          data-sev="MEDIUM" data-score="6.5" data-cwe="CWE-770, CWE-400"
+          data-cvss="CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:N/I:L/A:L"
+          data-cat-en="Resource Management" data-cat-pt="Gestão de Recursos"
+          data-desc-en="The transaction endpoint accepted an unlimited number of requests from the same authenticated user with no throttling."
+          data-desc-pt="O endpoint de transações aceitava número ilimitado de requisições do mesmo usuário autenticado, sem throttling."
+          data-impact-en="Automated abuse of the transaction flow and degradation of service availability."
+          data-impact-pt="Abuso automatizado do fluxo de transações e degradação da disponibilidade do serviço."
+          data-fix-en="Apply per-user and per-IP rate limits, add server-side transaction throttling and alert on abnormal request volumes."
+          data-fix-pt="Aplicar limites por usuário e por IP, adicionar throttling de transações no servidor e alertar sobre volumes anormais de requisições.">
+          <div class="finding-top">
+            <span class="badge b-medium mono">MEDIUM</span>
+            <span class="score mono">6.5</span>
+          </div>
+          <h4 data-en="Missing Rate Limiting on Transactions" data-pt="Ausência de Rate Limiting em Transações">Missing Rate Limiting on Transactions</h4>
+          <p class="finding-cwe mono">CWE-770 · CWE-400</p>
+          <span class="finding-cta mono" data-en="[ VIEW DETAILS ]" data-pt="[ VER DETALHES ]">[ VIEW DETAILS ]</span>
+        </article>
+
+        <article class="finding sev-medium-b" tabindex="0" role="button"
+          data-title-en="Stored XSS in Transaction Message Parameter"
+          data-title-pt="XSS Armazenado no Parâmetro de Mensagem da Transação"
+          data-sev="MEDIUM" data-score="6.1" data-cwe="CWE-79, CWE-116"
+          data-cvss="CVSS:3.1/AV:N/AC:L/PR:L/UI:R/S:C/C:L/I:L/A:N"
+          data-cat-en="Cross-Site Scripting" data-cat-pt="Cross-Site Scripting"
+          data-desc-en="A free-text field attached to transactions was stored and later rendered without proper output encoding."
+          data-desc-pt="Um campo de texto livre associado às transações era armazenado e posteriormente renderizado sem codificação de saída adequada."
+          data-impact-en="Script execution in the browser of any user who viewed the affected record."
+          data-impact-pt="Execução de script no navegador de qualquer usuário que visualizasse o registro afetado."
+          data-fix-en="Encode output according to the rendering context, validate input server-side and deploy a restrictive Content Security Policy."
+          data-fix-pt="Codificar a saída conforme o contexto de renderização, validar entrada no servidor e aplicar uma Content Security Policy restritiva.">
+          <div class="finding-top">
+            <span class="badge b-medium mono">MEDIUM</span>
+            <span class="score mono">6.1</span>
+          </div>
+          <h4 data-en="Stored XSS in Transaction Message Parameter" data-pt="XSS Armazenado no Parâmetro de Mensagem da Transação">Stored XSS in Transaction Message Parameter</h4>
+          <p class="finding-cwe mono">CWE-79 · CWE-116</p>
+          <span class="finding-cta mono" data-en="[ VIEW DETAILS ]" data-pt="[ VER DETALHES ]">[ VIEW DETAILS ]</span>
+        </article>
+
+        <article class="finding sev-low-b" tabindex="0" role="button"
+          data-title-en="Missing Rate Limiting on Account Registration"
+          data-title-pt="Ausência de Rate Limiting no Cadastro de Contas"
+          data-sev="LOW" data-score="4.3" data-cwe="CWE-307, CWE-770"
+          data-cvss="CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:L/A:N"
+          data-cat-en="Resource Management" data-cat-pt="Gestão de Recursos"
+          data-desc-en="The registration endpoint allowed unlimited unauthenticated attempts, with no throttling or challenge."
+          data-desc-pt="O endpoint de cadastro permitia tentativas ilimitadas sem autenticação, sem throttling nem desafio."
+          data-impact-en="Mass creation of fraudulent accounts and pollution of the user base."
+          data-impact-pt="Criação em massa de contas fraudulentas e poluição da base de usuários."
+          data-fix-en="Add per-IP rate limiting, progressive delays and a bot challenge on the registration flow, with monitoring of registration spikes."
+          data-fix-pt="Adicionar rate limiting por IP, atrasos progressivos e desafio anti-bot no fluxo de cadastro, com monitoramento de picos de registro.">
+          <div class="finding-top">
+            <span class="badge b-low mono">LOW</span>
+            <span class="score mono">4.3</span>
+          </div>
+          <h4 data-en="Missing Rate Limiting on Account Registration" data-pt="Ausência de Rate Limiting no Cadastro de Contas">Missing Rate Limiting on Account Registration</h4>
+          <p class="finding-cwe mono">CWE-307 · CWE-770</p>
+          <span class="finding-cta mono" data-en="[ VIEW DETAILS ]" data-pt="[ VER DETALHES ]">[ VIEW DETAILS ]</span>
+        </article>
+
+      </div>
+    </div>
+
+    <!-- Engagement B -->
+    <div class="engagement">
+      <div class="engagement-head">
+        <h3 class="mono">ENGAGEMENT B — <span data-en="REST API ASSESSMENT" data-pt="AVALIAÇÃO DE API REST">REST API ASSESSMENT</span></h3>
+        <ul class="engagement-meta mono">
+          <li><span data-en="TARGET" data-pt="ALVO">TARGET</span>: CONFIDENTIAL CLIENT</li>
+          <li><span data-en="TYPE" data-pt="TIPO">TYPE</span>: BLACK BOX</li>
+          <li><span data-en="YEAR" data-pt="ANO">YEAR</span>: 2026</li>
+          <li><span data-en="FINDINGS" data-pt="ACHADOS">FINDINGS</span>: 3</li>
+        </ul>
+      </div>
+
+      <div class="sev-summary mono" aria-label="Severity summary">
+        <span class="sev sev-medium">MEDIUM <b>3</b></span>
+      </div>
+
+      <div class="findings">
+
+        <article class="finding sev-medium-b" tabindex="0" role="button"
+          data-title-en="User Enumeration via Registration"
+          data-title-pt="Enumeração de Usuários via Registro"
+          data-sev="MEDIUM" data-score="5.7" data-cwe="CWE-203, CWE-639"
+          data-cvss="CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:L/I:L/A:N"
+          data-cat-en="Information Disclosure" data-cat-pt="Divulgação de Informação"
+          data-desc-en="The registration flow returned distinguishable responses for existing and non-existing accounts, allowing valid users to be enumerated."
+          data-desc-pt="O fluxo de registro retornava respostas distinguíveis para contas existentes e inexistentes, permitindo enumerar usuários válidos."
+          data-impact-en="An attacker can build a list of valid accounts to use in credential stuffing, phishing or targeted attacks."
+          data-impact-pt="Um atacante pode montar uma lista de contas válidas para uso em credential stuffing, phishing ou ataques direcionados."
+          data-fix-en="Return generic, uniform responses regardless of account existence, keep response timing consistent and rate-limit the endpoint."
+          data-fix-pt="Retornar respostas genéricas e uniformes independentemente da existência da conta, manter tempos de resposta consistentes e limitar a taxa do endpoint.">
+          <div class="finding-top">
+            <span class="badge b-medium mono">MEDIUM</span>
+            <span class="score mono">5.7</span>
+          </div>
+          <h4 data-en="User Enumeration via Registration" data-pt="Enumeração de Usuários via Registro">User Enumeration via Registration</h4>
+          <p class="finding-cwe mono">CWE-203 · CWE-639</p>
+          <span class="finding-cta mono" data-en="[ VIEW DETAILS ]" data-pt="[ VER DETALHES ]">[ VIEW DETAILS ]</span>
+        </article>
+
+        <article class="finding sev-medium-b" tabindex="0" role="button"
+          data-title-en="Exposed API Documentation"
+          data-title-pt="Documentação da API Exposta"
+          data-sev="MEDIUM" data-score="5.3" data-cwe="CWE-200, CWE-215"
+          data-cvss="CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:L/I:N/A:N"
+          data-cat-en="Information Disclosure" data-cat-pt="Divulgação de Informação"
+          data-desc-en="Interactive API documentation was publicly reachable without authentication, revealing the full endpoint surface and expected parameters."
+          data-desc-pt="A documentação interativa da API estava publicamente acessível sem autenticação, revelando toda a superfície de endpoints e os parâmetros esperados."
+          data-impact-en="Significantly reduces the effort required to map the attack surface and craft targeted requests against the API."
+          data-impact-pt="Reduz significativamente o esforço para mapear a superfície de ataque e construir requisições direcionadas contra a API."
+          data-fix-en="Restrict documentation to authenticated internal users or non-production environments, and remove debug interfaces from production."
+          data-fix-pt="Restringir a documentação a usuários internos autenticados ou a ambientes fora de produção, e remover interfaces de debug da produção.">
+          <div class="finding-top">
+            <span class="badge b-medium mono">MEDIUM</span>
+            <span class="score mono">5.3</span>
+          </div>
+          <h4 data-en="Exposed API Documentation" data-pt="Documentação da API Exposta">Exposed API Documentation</h4>
+          <p class="finding-cwe mono">CWE-200 · CWE-215</p>
+          <span class="finding-cta mono" data-en="[ VIEW DETAILS ]" data-pt="[ VER DETALHES ]">[ VIEW DETAILS ]</span>
+        </article>
+
+        <article class="finding sev-medium-b" tabindex="0" role="button"
+          data-title-en="Improper Email Field Validation"
+          data-title-pt="Validação Inadequada do Campo Email"
+          data-sev="MEDIUM" data-score="4.3" data-cwe="CWE-639"
+          data-cvss="CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:L/A:N"
+          data-cat-en="Input Validation" data-cat-pt="Validação de Entrada"
+          data-desc-en="The email field accepted malformed values that the server did not normalize or verify, weakening identity assumptions in the account flow."
+          data-desc-pt="O campo de email aceitava valores malformados que o servidor não normalizava nem verificava, enfraquecendo as premissas de identidade no fluxo de conta."
+          data-impact-en="Data integrity issues in the user base and possible abuse of flows that rely on the email address as an identity anchor."
+          data-impact-pt="Problemas de integridade na base de usuários e possível abuso de fluxos que usam o email como âncora de identidade."
+          data-fix-en="Validate and normalize email addresses server-side and confirm ownership with a verification step before activating the account."
+          data-fix-pt="Validar e normalizar endereços de email no servidor e confirmar a titularidade com uma etapa de verificação antes de ativar a conta.">
+          <div class="finding-top">
+            <span class="badge b-medium mono">MEDIUM</span>
+            <span class="score mono">4.3</span>
+          </div>
+          <h4 data-en="Improper Email Field Validation" data-pt="Validação Inadequada do Campo Email">Improper Email Field Validation</h4>
+          <p class="finding-cwe mono">CWE-639</p>
+          <span class="finding-cta mono" data-en="[ VIEW DETAILS ]" data-pt="[ VER DETALHES ]">[ VIEW DETAILS ]</span>
+        </article>
+
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ CTF & LABS ============ -->
+<section id="ctf" class="section section-alt">
+  <div class="wrap">
+    <div class="section-head">
+      <span class="section-index mono">06</span>
+      <h2 data-en="CTF &amp; SECURITY LABS" data-pt="CTF &amp; LABORATÓRIOS">CTF &amp; SECURITY LABS</h2>
+      <p class="section-tag mono" data-en="// hands-on practice" data-pt="// prática hands-on">// hands-on practice</p>
+    </div>
+
+    <div class="team-banner">
+      <div class="team-logo">
+        <img src="assets/caramelo-storm.jpg" alt="Caramelo Storm Labs team logo" loading="lazy">
+      </div>
+      <div class="team-info">
+        <p class="mono team-label" data-en="CTF TEAM" data-pt="TIME DE CTF">CTF TEAM</p>
+        <h3>CARAMELO STORM</h3>
+        <p class="team-period mono" data-en="APR 2025 — PRESENT · Brasília, Brazil" data-pt="ABR 2025 — ATUAL · Brasília, Brasil">APR 2025 — PRESENT · Brasília, Brazil</p>
+        <p data-en="I compete in Capture the Flag events with the Caramelo Storm team, focused on offensive security: exploitation, privilege escalation, web and infrastructure attacks — working alongside senior community members to push technical depth."
+           data-pt="Compito em eventos de Capture the Flag com o time Caramelo Storm, com foco em segurança ofensiva: exploração, escalonamento de privilégios e ataques web e de infraestrutura — trabalhando junto a membros seniores da comunidade para aprofundar a base técnica."></p>
+        <ul class="tag-row">
+          <li data-en="Exploitation" data-pt="Exploração">Exploitation</li>
+          <li data-en="Privilege Escalation" data-pt="Escalonamento de Privilégios">Privilege Escalation</li>
+          <li data-en="Web Attacks" data-pt="Ataques Web">Web Attacks</li>
+          <li data-en="Infrastructure" data-pt="Infraestrutura">Infrastructure</li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- ---- HTB PROFILE ---- -->
+    <div class="htb-profile">
+      <div class="htb-left">
+        <p class="mono htb-label">HACK THE BOX</p>
+        <h3 class="mono">brunorodrigues88</h3>
+        <p class="htb-rank mono">HTB RANK: <b>SKILLED</b> · LVL 33</p>
+        <a class="btn btn-small" href="https://app.hackthebox.com/users/2247536" target="_blank" rel="noopener noreferrer"
+           data-en="OPEN HTB PROFILE →" data-pt="ABRIR PERFIL HTB →">OPEN HTB PROFILE →</a>
+      </div>
+      <ul class="htb-stats mono">
+        <li><b>33</b><span data-en="Level" data-pt="Nível">Level</span></li>
+        <li><b>8</b><span data-en="Machines owned" data-pt="Máquinas concluídas">Machines owned</span></li>
+        <li><b>3</b><span data-en="Global CTFs" data-pt="CTFs globais">Global CTFs</span></li>
+        <li><b>290</b><span data-en="CTF challenges solved" data-pt="Desafios de CTF resolvidos">CTF challenges solved</span></li>
+      </ul>
+    </div>
+
+    <!-- ---- CTF COMPETITIONS ---- -->
+    <div class="section-head sub-head">
+      <h2 data-en="CTF COMPETITIONS" data-pt="COMPETIÇÕES DE CTF">CTF COMPETITIONS</h2>
+      <p class="section-tag mono" data-en="// certificates of participation" data-pt="// certificados de participação">// certificates of participation</p>
+    </div>
+
+    <div class="cert-grid ctf-grid">
+
+      <article class="cert">
+        <button class="cert-thumb wide" type="button"
+                data-full="assets/certificates/ctf/htb-cyber-apocalypse-2026.jpg"
+                data-caption="Hack The Box — Cyber Apocalypse CTF 2026: The Salt Crown — 194th of 6,744 teams — 123/136 challenges — 56,750 points">
+          <img src="assets/certificates/ctf/htb-cyber-apocalypse-2026.jpg" alt="Hack The Box Cyber Apocalypse CTF 2026 certificate of participation" loading="lazy">
+          <span class="cert-zoom mono" aria-hidden="true">⤢</span>
+        </button>
+        <div class="cert-body">
+          <span class="cert-kind mono type-ctf">CTF</span>
+          <h3>Cyber Apocalypse CTF 2026</h3>
+          <p class="cert-full">The Salt Crown</p>
+          <p class="cert-org mono">Hack The Box <span class="cert-date">· 24–29 JUL 2026</span></p>
+          <ul class="ctf-stats mono">
+            <li><b>194<sup>th</sup></b><span data-en="of 6,744 teams" data-pt="de 6.744 times">of 6,744 teams</span></li>
+            <li><b>123/136</b><span data-en="challenges solved" data-pt="desafios resolvidos">challenges solved</span></li>
+            <li><b>56,750</b><span data-en="points" data-pt="pontos">points</span></li>
+          </ul>
+          <p class="cert-team mono">TEAM: CARAMELO STORM</p>
+        </div>
+      </article>
+
+      <article class="cert">
+        <button class="cert-thumb wide" type="button"
+                data-full="assets/certificates/ctf/htb-gcsb-2026-project-nightfall.jpg"
+                data-caption="Hack The Box — Global Cyber Skills Benchmark 2026: Project Nightfall — 102nd of 589 teams — 106/126 challenges — 60,400 points">
+          <img src="assets/certificates/ctf/htb-gcsb-2026-project-nightfall.jpg" alt="Hack The Box Global Cyber Skills Benchmark 2026 certificate of participation" loading="lazy">
+          <span class="cert-zoom mono" aria-hidden="true">⤢</span>
+        </button>
+        <div class="cert-body">
+          <span class="cert-kind mono type-ctf">CTF</span>
+          <h3>Global Cyber Skills Benchmark 2026</h3>
+          <p class="cert-full">Project Nightfall</p>
+          <p class="cert-org mono">Hack The Box <span class="cert-date">· 15–20 MAY 2026</span></p>
+          <ul class="ctf-stats mono">
+            <li><b>102<sup>nd</sup></b><span data-en="of 589 teams" data-pt="de 589 times">of 589 teams</span></li>
+            <li><b>106/126</b><span data-en="challenges solved" data-pt="desafios resolvidos">challenges solved</span></li>
+            <li><b>60,400</b><span data-en="points" data-pt="pontos">points</span></li>
+          </ul>
+          <p class="cert-team mono">TEAM: CARAMELO STORM</p>
+        </div>
+      </article>
+
+      <article class="cert">
+        <button class="cert-thumb wide" type="button"
+                data-full="assets/certificates/ctf/htb-gcsb-2025-operation-blackout.jpg"
+                data-caption="Hack The Box — Global Cyber Skills Benchmark CTF 2025: Operation Blackout — 113th of 796 teams — 61/103 challenges — 27,075 points">
+          <img src="assets/certificates/ctf/htb-gcsb-2025-operation-blackout.jpg" alt="Hack The Box Global Cyber Skills Benchmark CTF 2025 certificate of participation" loading="lazy">
+          <span class="cert-zoom mono" aria-hidden="true">⤢</span>
+        </button>
+        <div class="cert-body">
+          <span class="cert-kind mono type-ctf">CTF</span>
+          <h3>Global Cyber Skills Benchmark 2025</h3>
+          <p class="cert-full">Operation Blackout</p>
+          <p class="cert-org mono">Hack The Box <span class="cert-date">· 23–27 MAY 2025</span></p>
+          <ul class="ctf-stats mono">
+            <li><b>113<sup>th</sup></b><span data-en="of 796 teams" data-pt="de 796 times">of 796 teams</span></li>
+            <li><b>61/103</b><span data-en="challenges solved" data-pt="desafios resolvidos">challenges solved</span></li>
+            <li><b>27,075</b><span data-en="points" data-pt="pontos">points</span></li>
+          </ul>
+          <p class="cert-team mono">TEAM: CARAMELO STORM</p>
+        </div>
+      </article>
+
+    </div>
+
+    <!-- ---- MACHINES / LABS ---- -->
+    <div class="section-head sub-head">
+      <h2 data-en="MACHINES &amp; LABS" data-pt="MÁQUINAS &amp; LABS">MACHINES &amp; LABS</h2>
+      <p class="section-tag mono" data-en="// individual targets" data-pt="// alvos individuais">// individual targets</p>
+    </div>
+
+    <p class="empty-note mono"
+       data-en="// no machines published yet — see GUIA-DO-SITE.md, section 5, to add them"
+       data-pt="// nenhuma máquina publicada ainda — veja o GUIA-DO-SITE.md, seção 5, para adicionar"></p>
+
+    <!--
+      ===============================================================
+      MODELO DE MÁQUINA / LAB
+      Descomente este bloco, cole uma cópia para cada máquina e edite.
+      Dificuldades disponíveis: d-easy / d-medium / d-hard
+      Apague o <p class="empty-note"> acima quando adicionar a primeira.
+      ===============================================================
+
+    <div class="cards grid-3" id="labs-grid">
+      <article class="lab">
+        <p class="lab-platform mono">HACK THE BOX</p>
+        <h3>NOME DA MAQUINA</h3>
+        <p class="lab-diff mono"><span data-en="Difficulty" data-pt="Dificuldade">Difficulty</span>: <b class="d-easy">EASY</b></p>
+        <ul class="tech-list mono">
+          <li data-en="Enumeration" data-pt="Enumeracao"></li>
+          <li data-en="Web Exploitation" data-pt="Exploracao Web"></li>
+          <li data-en="Privilege Escalation" data-pt="Escalonamento de Privilegios"></li>
+        </ul>
+        <p class="lab-status mono"><span class="status-ok" data-en="COMPLETED" data-pt="CONCLUIDA"></span></p>
+      </article>
+    </div>
+    -->
+
+  </div>
+</section>
+
+<!-- ============ CERTIFICATIONS ============ -->
+<section id="certs" class="section">
+  <div class="wrap">
+    <div class="section-head">
+      <span class="section-index mono">07</span>
+      <h2 data-en="CERTIFICATIONS" data-pt="CERTIFICAÇÕES">CERTIFICATIONS</h2>
+      <p class="section-tag mono" data-en="// verified credentials" data-pt="// credenciais verificadas">// verified credentials</p>
+    </div>
+
+    <div class="cert-grid">
+
+      <article class="cert">
+        <button class="cert-thumb" type="button"
+                data-full="assets/certificates/oscp.png"
+                data-caption="OSCP — OffSec Certified Professional — OffSec, April 2026">
+          <img src="assets/certificates/oscp.png" alt="OSCP certificate — OffSec Certified Professional, issued to Bruno Rodrigues dos Reis" loading="lazy">
+          <span class="cert-zoom mono" aria-hidden="true">⤢</span>
+        </button>
+        <div class="cert-body">
+          <span class="cert-kind mono type-cert" data-en="CERTIFICATION" data-pt="CERTIFICAÇÃO">CERTIFICATION</span>
+          <h3>OSCP</h3>
+          <p class="cert-full">OffSec Certified Professional</p>
+          <p class="cert-org mono">OffSec <span class="cert-date" data-en="· April 2026" data-pt="· Abril 2026">· April 2026</span></p>
+          <span class="cert-status mono status-ok" data-en="COMPLETED" data-pt="CONCLUÍDA">COMPLETED</span>
+        </div>
+      </article>
+
+      <article class="cert">
+        <button class="cert-thumb" type="button"
+                data-full="assets/certificates/emapt.jpg"
+                data-caption="eMAPT — Mobile Application Penetration Tester — INE Security, June 2026 — ID 186556734">
+          <img src="assets/certificates/emapt.jpg" alt="eMAPT certificate — Mobile Application Penetration Tester, INE Security" loading="lazy">
+          <span class="cert-zoom mono" aria-hidden="true">⤢</span>
+        </button>
+        <div class="cert-body">
+          <span class="cert-kind mono type-cert" data-en="CERTIFICATION" data-pt="CERTIFICAÇÃO">CERTIFICATION</span>
+          <h3>eMAPT</h3>
+          <p class="cert-full">Mobile Application Penetration Tester</p>
+          <p class="cert-org mono">INE Security <span class="cert-date" data-en="· June 2026" data-pt="· Junho 2026">· June 2026</span></p>
+          <p class="cert-id mono">ID: 186556734</p>
+          <span class="cert-status mono status-ok" data-en="COMPLETED" data-pt="CONCLUÍDA">COMPLETED</span>
+        </div>
+      </article>
+
+      <article class="cert">
+        <button class="cert-thumb" type="button"
+                data-full="assets/certificates/dcpt.jpg"
+                data-caption="DCPT — Desec Certified Penetration Tester — Desec Security, May 2025 — Key LDBS-MZOZL-UVND">
+          <img src="assets/certificates/dcpt.jpg" alt="DCPT certificate — Desec Certified Penetration Tester, Desec Security" loading="lazy">
+          <span class="cert-zoom mono" aria-hidden="true">⤢</span>
+        </button>
+        <div class="cert-body">
+          <span class="cert-kind mono type-cert" data-en="CERTIFICATION" data-pt="CERTIFICAÇÃO">CERTIFICATION</span>
+          <h3>DCPT</h3>
+          <p class="cert-full">Desec Certified Penetration Tester</p>
+          <p class="cert-org mono">Desec Security <span class="cert-date" data-en="· May 2025" data-pt="· Maio 2025">· May 2025</span></p>
+          <p class="cert-id mono">KEY: LDBS-MZOZL-UVND</p>
+          <a class="cert-verify mono" href="https://desecsecurity.com" target="_blank" rel="noopener noreferrer"
+             data-en="VERIFY →" data-pt="VALIDAR →">VERIFY →</a>
+          <span class="cert-status mono status-ok" data-en="COMPLETED" data-pt="CONCLUÍDA">COMPLETED</span>
+        </div>
+      </article>
+
+      <article class="cert">
+        <button class="cert-thumb" type="button"
+                data-full="assets/certificates/oversecurity-pentest-mobile-ios.jpg"
+                data-caption="Pentest Mobile iOS — Turma III — Over Security Intelligence, June 2026 — 30 hours">
+          <img src="assets/certificates/oversecurity-pentest-mobile-ios.jpg" alt="Pentest Mobile iOS certificate — Over Security Intelligence" loading="lazy">
+          <span class="cert-zoom mono" aria-hidden="true">⤢</span>
+        </button>
+        <div class="cert-body">
+          <span class="cert-kind mono type-course" data-en="COURSE" data-pt="CURSO">COURSE</span>
+          <h3>Pentest Mobile iOS</h3>
+          <p class="cert-full" data-en="Class III — 30 hours" data-pt="Turma III — 30 horas">Class III — 30 hours</p>
+          <p class="cert-org mono">Over Security Intelligence <span class="cert-date" data-en="· June 2026" data-pt="· Junho 2026">· June 2026</span></p>
+          <p class="cert-id mono">KEY: K9gG7AnwIBPVXLE</p>
+          <a class="cert-verify mono" href="https://oversecurity.com.br/valida-certificado/K9gG7AnwIBPVXLE" target="_blank" rel="noopener noreferrer"
+             data-en="VERIFY →" data-pt="VALIDAR →">VERIFY →</a>
+          <span class="cert-status mono status-ok" data-en="COMPLETED" data-pt="CONCLUÍDO">COMPLETED</span>
+        </div>
+      </article>
+
+      <article class="cert">
+        <button class="cert-thumb" type="button"
+                data-full="assets/certificates/desec-pentest-mobile-v2.jpg"
+                data-caption="Pentest Mobile V2 — Desec Security, April 2026 — 15 hours — Key IQHD-SHCTF-LBXC">
+          <img src="assets/certificates/desec-pentest-mobile-v2.jpg" alt="Pentest Mobile V2 certificate — Desec Security" loading="lazy">
+          <span class="cert-zoom mono" aria-hidden="true">⤢</span>
+        </button>
+        <div class="cert-body">
+          <span class="cert-kind mono type-course" data-en="COURSE" data-pt="CURSO">COURSE</span>
+          <h3>Pentest Mobile V2</h3>
+          <p class="cert-full" data-en="Android application pentesting — 15 hours" data-pt="Pentest em aplicações Android — 15 horas">Android application pentesting — 15 hours</p>
+          <p class="cert-org mono">Desec Security <span class="cert-date" data-en="· April 2026" data-pt="· Abril 2026">· April 2026</span></p>
+          <p class="cert-id mono">KEY: IQHD-SHCTF-LBXC</p>
+          <a class="cert-verify mono" href="https://desecsecurity.com" target="_blank" rel="noopener noreferrer"
+             data-en="VERIFY →" data-pt="VALIDAR →">VERIFY →</a>
+          <span class="cert-status mono status-ok" data-en="COMPLETED" data-pt="CONCLUÍDO">COMPLETED</span>
+        </div>
+      </article>
+
+      <article class="cert">
+        <button class="cert-thumb" type="button"
+                data-full="assets/certificates/cisco-ethical-hacker.jpg"
+                data-caption="Ethical Hacker — Cisco Networking Academy, April 2025">
+          <img src="assets/certificates/cisco-ethical-hacker.jpg" alt="Ethical Hacker course completion certificate — Cisco Networking Academy" loading="lazy">
+          <span class="cert-zoom mono" aria-hidden="true">⤢</span>
+        </button>
+        <div class="cert-body">
+          <span class="cert-kind mono type-course" data-en="COURSE" data-pt="CURSO">COURSE</span>
+          <h3>Ethical Hacker</h3>
+          <p class="cert-full" data-en="Course completion — student level credential" data-pt="Conclusão de curso — credencial nível estudante">Course completion — student level credential</p>
+          <p class="cert-org mono">Cisco Networking Academy <span class="cert-date" data-en="· April 2025" data-pt="· Abril 2025">· April 2025</span></p>
+          <span class="cert-status mono status-ok" data-en="COMPLETED" data-pt="CONCLUÍDO">COMPLETED</span>
+        </div>
+      </article>
+
+      <article class="cert cert-nofile">
+        <div class="cert-body">
+          <span class="cert-kind mono type-course" data-en="COURSE" data-pt="CURSO">COURSE</span>
+          <h3>CyberOps</h3>
+          <p class="cert-org mono">Cisco Networking Academy</p>
+          <span class="cert-status mono status-ok" data-en="COMPLETED" data-pt="CONCLUÍDO">COMPLETED</span>
+          <p class="cert-hint mono" data-en="// add assets/certificates/cyberops.jpg to show the certificate"
+                                    data-pt="// adicione assets/certificates/cyberops.jpg para exibir o certificado"></p>
+        </div>
+      </article>
+
+      <article class="cert cert-nofile">
+        <div class="cert-body">
+          <span class="cert-kind mono type-course" data-en="COURSE" data-pt="CURSO">COURSE</span>
+          <h3>CCNA: Introduction to Networks</h3>
+          <p class="cert-org mono">Cisco Networking Academy</p>
+          <span class="cert-status mono status-ok" data-en="COMPLETED" data-pt="CONCLUÍDO">COMPLETED</span>
+          <p class="cert-hint mono" data-en="// add assets/certificates/ccna-itn.jpg to show the certificate"
+                                    data-pt="// adicione assets/certificates/ccna-itn.jpg para exibir o certificado"></p>
+        </div>
+      </article>
+
+    </div>
+
+    <!-- EDUCATION -->
+    <div class="section-head sub-head">
+      <h2 data-en="EDUCATION" data-pt="FORMAÇÃO ACADÊMICA">EDUCATION</h2>
+      <p class="section-tag mono" data-en="// academic background" data-pt="// formação">// academic background</p>
+    </div>
+
+    <ol class="timeline timeline-edu">
+      <li class="tl-item">
+        <div class="tl-marker" aria-hidden="true"></div>
+        <div class="tl-body">
+          <p class="tl-period mono" data-en="MAR 2025 — JUL 2026" data-pt="MAR 2025 — JUL 2026">MAR 2025 — JUL 2026</p>
+          <h3 class="tl-role" data-en="Postgraduate Degree (Lato Sensu) — Privacy and Information Security" data-pt="Pós-graduação (Lato Sensu) — Privacidade e Segurança da Informação">Postgraduate Degree (Lato Sensu) — Privacy and Information Security</h3>
+          <p class="tl-company" data-en="Universidade de Brasília (UnB) — Brasília, Brazil" data-pt="Universidade de Brasília (UnB) — Brasília, Brasil">Universidade de Brasília (UnB) — Brasília, Brazil</p>
+          <ul class="tl-list">
+            <li data-en="Programme: Specialization in Privacy and Information Security — PPEE/UnB." data-pt="Curso de Especialização em Privacidade e Segurança da Informação — PPEE/UnB."></li>
+            <li data-en="Relevant coursework: Offensive Security and Penetration Testing." data-pt="Disciplinas relevantes: Segurança Ofensiva e Testes de Intrusão."></li>
+          </ul>
+
+          <div class="thesis">
+            <p class="thesis-label mono" data-en="RESEARCH / THESIS" data-pt="PESQUISA / MONOGRAFIA">RESEARCH / THESIS</p>
+            <h4 data-en="The Effectiveness of the Purple Team in Cybersecurity" data-pt="A Efetividade do Purple Team na Cibersegurança">The Effectiveness of the Purple Team in Cybersecurity</h4>
+            <p class="thesis-sub" data-en="An integration approach between Red and Blue Team"
+                                  data-pt="Uma abordagem de integração entre Red e Blue Team">An integration approach between Red and Blue Team</p>
+            <dl class="thesis-meta mono">
+              <div><dt data-en="AUTHOR" data-pt="AUTOR">AUTHOR</dt><dd>Bruno Rodrigues dos Reis</dd></div>
+              <div><dt data-en="ADVISOR" data-pt="ORIENTADOR">ADVISOR</dt><dd>Prof. Daniel Chaves Café</dd></div>
+              <div><dt data-en="INSTITUTION" data-pt="INSTITUIÇÃO">INSTITUTION</dt><dd>Universidade de Brasília (PPEE)</dd></div>
+            </dl>
+            <p class="thesis-abstract"
+               data-en="Red and Blue Teams operating in isolation create an operational gap: the attacker cannot see whether the detection worked, and the defender does not know the real scope of the simulated attack. The research examines how the Purple Team closes that feedback loop and how its effectiveness can be assessed."
+               data-pt="Red e Blue Team atuando de forma isolada criam uma lacuna operacional: o atacante não enxerga se a detecção funcionou, e o defensor desconhece o escopo real do ataque simulado. A pesquisa examina como o Purple Team fecha esse ciclo de retroalimentação e como sua efetividade pode ser avaliada."></p>
+            <a class="btn btn-small" href="assets/research/purple-team-effectiveness.pdf" target="_blank" rel="noopener noreferrer"
+               data-en="OPEN PRESENTATION (PDF) →" data-pt="ABRIR APRESENTAÇÃO (PDF) →">OPEN PRESENTATION (PDF) →</a>
+          </div>
+        </div>
+      </li>
+      <li class="tl-item">
+        <div class="tl-marker" aria-hidden="true"></div>
+        <div class="tl-body">
+          <p class="tl-period mono" data-en="MAR 2023 — JUL 2025" data-pt="MAR 2023 — JUL 2025">MAR 2023 — JUL 2025</p>
+          <h3 class="tl-role" data-en="Technologist Degree — Cyber Defense" data-pt="Tecnólogo — Defesa Cibernética">Technologist Degree — Cyber Defense</h3>
+          <p class="tl-company" data-en="Estácio — Brazil" data-pt="Estácio — Brasil">Estácio — Brazil</p>
+        </div>
+      </li>
+      <li class="tl-item">
+        <div class="tl-marker" aria-hidden="true"></div>
+        <div class="tl-body">
+          <p class="tl-period mono" data-en="MAR 2014 — MAR 2019" data-pt="MAR 2014 — MAR 2019">MAR 2014 — MAR 2019</p>
+          <h3 class="tl-role" data-en="Bachelor's Degree — Accounting" data-pt="Bacharelado — Ciências Contábeis">Bachelor's Degree — Accounting</h3>
+          <p class="tl-company" data-en="Anhanguera Educacional — Porto Alegre, Brazil" data-pt="Anhanguera Educacional — Porto Alegre, Brasil">Anhanguera Educacional — Porto Alegre, Brazil</p>
+        </div>
+      </li>
+    </ol>
+  </div>
+</section>
+
+<!-- ============ WRITE-UPS ============ -->
+<section id="writeups" class="section section-alt">
+  <div class="wrap">
+    <div class="section-head">
+      <span class="section-index mono">08</span>
+      <h2 data-en="WRITE-UPS" data-pt="WRITE-UPS">WRITE-UPS</h2>
+      <p class="section-tag mono" data-en="// technical notes" data-pt="// notas técnicas">// technical notes</p>
+    </div>
+
+    <p class="section-lead"
+       data-en="Technical breakdowns of techniques and labs. Each entry is a standalone page under /writeups — duplicate writeups/template.html to publish a new one."
+       data-pt="Análises técnicas de técnicas e laboratórios. Cada entrada é uma página independente em /writeups — duplique writeups/template.html para publicar uma nova."></p>
+
+    <p class="empty-note mono"
+       data-en="// no write-ups published yet — duplicate writeups/template.html to publish the first one"
+       data-pt="// nenhum write-up publicado ainda — duplique writeups/template.html para publicar o primeiro"></p>
+
+    <!--
+      ===============================================================
+      MODELO DE CARD DE WRITE-UP
+      Descomente e aponte o href para o arquivo que voce criou em writeups/.
+      Apague o <p class="empty-note"> acima quando adicionar o primeiro.
+      ===============================================================
+
+    <div class="cards grid-3">
+      <a class="writeup" href="writeups/SEU-ARQUIVO.html">
+        <span class="wu-num mono">[01]</span>
+        <h3>TITULO DO WRITE-UP</h3>
+        <p class="wu-cat mono">Categoria</p>
+        <p class="wu-excerpt" data-en="Short summary." data-pt="Resumo curto."></p>
+        <span class="wu-cta mono" data-en="READ WRITE-UP &rarr;" data-pt="LER WRITE-UP &rarr;"></span>
+      </a>
+    </div>
+    -->
+
+    <!--
+      ===============================================================
+      OPTIONAL: MITRE ATT&CK SECTION
+      Deliberately left out — no ATT&CK mappings were documented in
+      the source material, and inventing them would be dishonest.
+      When you map real techniques in an engagement, uncomment this
+      block and fill it with the technique IDs you actually used.
+      ===============================================================
+
+    <div class="section-head sub-head">
+      <h2>MITRE ATT&amp;CK</h2>
+      <p class="section-tag mono">// mapped techniques</p>
+    </div>
+    <div class="cards grid-3">
+      <article class="card">
+        <h3 class="mono">T1059</h3>
+        <p>Command and Scripting Interpreter</p>
+      </article>
+    </div>
+    -->
+  </div>
+</section>
+
+<!-- ============ CONTACT ============ -->
+<section id="contact" class="section">
+  <div class="wrap">
+    <div class="section-head">
+      <span class="section-index mono">09</span>
+      <h2 data-en="CONTACT" data-pt="CONTATO">CONTACT</h2>
+      <p class="section-tag mono" data-en="// open channel" data-pt="// canal aberto">// open channel</p>
+    </div>
+
+    <div class="contact-box">
+      <div class="terminal">
+        <div class="terminal-bar" aria-hidden="true">
+          <span></span><span></span><span></span>
+          <p class="mono">bruno@offsec — bash</p>
+        </div>
+        <pre class="terminal-body mono" aria-label="Contact information"><span class="t-prompt">bruno@offsec:~$</span> whoami
+<span class="t-out">Bruno Rodrigues — Offensive Security Engineer</span>
+<span class="t-prompt">bruno@offsec:~$</span> cat contact.txt
+<span class="t-out">location : Brasília, DF — Brazil
+email    : sgtbrunorodrigues@hotmail.com</span>
+<span class="t-prompt">bruno@offsec:~$</span> <span class="cursor" aria-hidden="true"></span></pre>
+      </div>
+
+      <div class="contact-links">
+        <p class="contact-lead"
+           data-en="Open to offensive security roles and technical conversations. The fastest way to reach me is email."
+           data-pt="Aberto a oportunidades em segurança ofensiva e a conversas técnicas. O caminho mais rápido é o email."></p>
+
+        <a class="contact-link" href="mailto:sgtbrunorodrigues@hotmail.com">
+          <span class="cl-icon mono" aria-hidden="true">@</span>
+          <span class="cl-text"><b>EMAIL</b><small>sgtbrunorodrigues@hotmail.com</small></span>
+        </a>
+
+        <!-- TODO: replace with your real LinkedIn URL -->
+        <a class="contact-link" href="https://www.linkedin.com/in/brunorodrigues-security/" target="_blank" rel="noopener noreferrer">
+          <span class="cl-icon mono" aria-hidden="true">in</span>
+          <span class="cl-text"><b>LINKEDIN</b><small>linkedin.com/in/brunorodrigues-security</small></span>
+        </a>
+
+        <!-- TODO: replace with your real GitHub URL -->
+        <a class="contact-link" href="https://github.com/sgtbrunorodrigues" target="_blank" rel="noopener noreferrer">
+          <span class="cl-icon mono" aria-hidden="true">&lt;/&gt;</span>
+          <span class="cl-text"><b>GITHUB</b><small>github.com/sgtbrunorodrigues</small></span>
+        </a>
+
+        <a class="contact-link" href="https://app.hackthebox.com/users/2247536" target="_blank" rel="noopener noreferrer">
+          <span class="cl-icon mono" aria-hidden="true">HTB</span>
+          <span class="cl-text"><b>HACK THE BOX</b><small>brunorodrigues88</small></span>
+        </a>
+
+        <!-- OPTIONAL: uncomment and fill in when you have the profile
+        <a class="contact-link" href="https://tryhackme.com/p/YOUR-USER" target="_blank" rel="noopener noreferrer">
+          <span class="cl-icon mono" aria-hidden="true">THM</span>
+          <span class="cl-text"><b>TRYHACKME</b><small>tryhackme.com/p/YOUR-USER</small></span>
+        </a>
+        -->
+      </div>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<footer class="footer">
+  <div class="wrap footer-inner">
+    <p class="mono">© <span id="year">2026</span> BRUNO RODRIGUES — OFFENSIVE SECURITY ENGINEER</p>
+    <p class="mono footer-note"
+       data-en="All findings published here are anonymized. No confidential client information is disclosed."
+       data-pt="Todos os achados publicados aqui são anonimizados. Nenhuma informação confidencial de cliente é divulgada."></p>
+  </div>
+</footer>
+
+<!-- ============ MODAL: vulnerability details ============ -->
+<div class="modal" id="vuln-modal" role="dialog" aria-modal="true" aria-labelledby="vuln-modal-title" hidden>
+  <div class="modal-backdrop" data-close></div>
+  <div class="modal-panel" role="document">
+    <button class="modal-close" type="button" data-close aria-label="Close">×</button>
+    <div class="modal-head">
+      <span class="badge mono" id="vm-badge"></span>
+      <span class="score mono" id="vm-score"></span>
+    </div>
+    <h3 id="vuln-modal-title"></h3>
+    <dl class="modal-meta mono">
+      <div><dt>CWE</dt><dd id="vm-cwe"></dd></div>
+      <div><dt data-en="CATEGORY" data-pt="CATEGORIA">CATEGORY</dt><dd id="vm-cat"></dd></div>
+      <div><dt>CVSS v3.1</dt><dd id="vm-cvss" class="wrap-any"></dd></div>
+      <div><dt data-en="TARGET" data-pt="ALVO">TARGET</dt><dd>CONFIDENTIAL CLIENT</dd></div>
+    </dl>
+    <h4 data-en="DESCRIPTION" data-pt="DESCRIÇÃO">DESCRIPTION</h4>
+    <p id="vm-desc"></p>
+    <h4 data-en="IMPACT" data-pt="IMPACTO">IMPACT</h4>
+    <p id="vm-impact"></p>
+    <h4 data-en="REMEDIATION" data-pt="REMEDIAÇÃO">REMEDIATION</h4>
+    <p id="vm-fix"></p>
+    <p class="modal-foot mono"
+       data-en="Technical detail, proof of concept and affected endpoints are withheld under the engagement's confidentiality terms."
+       data-pt="Detalhe técnico, prova de conceito e endpoints afetados são omitidos conforme os termos de confidencialidade do engajamento."></p>
+  </div>
+</div>
+
+<!-- ============ LIGHTBOX: certificates ============ -->
+<div class="lightbox" id="lightbox" role="dialog" aria-modal="true" aria-label="Certificate viewer" hidden>
+  <div class="modal-backdrop" data-close></div>
+  <figure class="lightbox-figure">
+    <button class="modal-close" type="button" data-close aria-label="Close">×</button>
+    <img id="lb-img" src="" alt="">
+    <figcaption id="lb-caption" class="mono"></figcaption>
+  </figure>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
