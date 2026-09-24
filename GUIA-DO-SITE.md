@@ -241,7 +241,8 @@ para quem entrevista você.
 
 Tudo no site veio dos seus documentos. Nada foi inventado:
 
-- **Experiência**: AB InBev, CIGE/Exército Brasileiro, unidades do Exército, SPOT.
+- **Experiência**: Banco Carrefour (desde set/2026), AB InBev, CIGE/Exército Brasileiro, unidades do Exército, SPOT.
+  Os logos das empresas ficam em `assets/logos/` (quadradinho no canto de cada card, classe `.tl-logo`).
 - **Formação**: pós-graduação na UnB (PPEE), tecnólogo em Defesa Cibernética
   pela Estácio, bacharelado em Ciências Contábeis pela Anhanguera.
 - **Monografia**: *A Efetividade do Purple Team na Cibersegurança*, orientação

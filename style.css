@@ -610,6 +610,20 @@ main, .nav, .footer { position: relative; z-index: 2; }
 }
 .tl-item-alt .tl-body { border-left-color: rgba(232, 52, 28, .5); }
 
+/* Company logo tile, top-right of each timeline card */
+.tl-logo {
+  float: right;
+  width: 56px;
+  height: 56px;
+  margin: 0 0 10px 16px;
+  padding: 4px;
+  object-fit: contain;
+  background: #fff;
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+}
+.tl-logo-dark { background: #000; padding: 0; }
+
 .tl-period {
   font-size: .68rem;
   letter-spacing: .14em;
